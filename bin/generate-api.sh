@@ -18,8 +18,8 @@ echo -e "\n\e[96mAPI client code generator started...\n\e[39m";
 
 openapi-generator generate \
     -i http://127.0.0.1:3000/openapi.json \
-    -g typescript-angular \
-    -o packages/client/src/app/core/api \
-    --enable-post-process-fileg
+    -g javascript \
+    -o packages/shopping/public/api \
+    --enable-post-process-file
 
 echo -e "\n\e[92mAPI client code generator completed.\n";
